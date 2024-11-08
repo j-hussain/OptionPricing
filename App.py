@@ -238,3 +238,6 @@ st.download_button(
     file_name='option_pricing_report.csv',
     mime='text/csv'
 )
+
+st.markdown("---")
+st.markdown("<h3 style='text-align: center;'>Created by Jabir Hussain</h3>", unsafe_allow_html=True)
