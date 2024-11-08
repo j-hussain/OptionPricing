@@ -39,6 +39,7 @@ body {
 
 # Sidebar for inputs
 with st.sidebar:
+    st.markdown("##### Made by Jabir Hussain")
     st.title("Option Parameters")
     S = st.slider("Current Asset Price (S)", min_value=0.01, max_value=500.0, value=100.0, help="The current price of the underlying asset.")
     K = st.slider("Strike Price (K)", min_value=0.01, max_value=500.0, value=100.0, help="The price at which the option can be exercised.")
@@ -238,6 +239,3 @@ st.download_button(
     file_name='option_pricing_report.csv',
     mime='text/csv'
 )
-
-st.markdown("---")
-st.markdown("<h3 style='text-align: center;'>Created by Jabir Hussain</h3>", unsafe_allow_html=True)
